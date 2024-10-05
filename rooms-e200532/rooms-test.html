@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Rooms - Tests - JS</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" href="../../node_modules/mocha/mocha.css" />
+    <script src="../../node_modules/mocha/mocha.js"></script>
+    <script src="../../node_modules/chai/chai.js"></script>
+    <script type="module" class="mocha-init">
+        mocha.setup('bdd');
+    </script>
+    <script type="module" src="./tests/rooms.spec.min.mjs"></script>
+    <script type="module">
+        mocha.run();
+    </script>
+</head>
+<body>
+<header>
+    <h1>Tests unitaires de Rooms</h1>
+</header>
+<div id="mocha"></div>
+</body>
+</html>

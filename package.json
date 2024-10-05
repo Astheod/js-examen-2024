@@ -1,0 +1,18 @@
+{
+  "name": "rooms",
+  "version": "1.0.0",
+  "description": "Examen JS Juin 2024",
+  "main": "rooms/index.html",
+  "directories": {
+    "test": "rooms/tests"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "V. MARTIN",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.2.0"
+  }
+}

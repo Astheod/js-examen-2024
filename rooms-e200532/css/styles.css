@@ -1,0 +1,141 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0.5em 0;
+}
+main {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+    justify-content: center;
+}
+#selectedRooms {
+    display: flex;
+    flex-flow: column nowrap;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+#selectedRooms h2 {
+    background: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    list-style: none;
+    user-select: none;
+    margin: 0;
+}
+/* Quote Styling */
+q {
+    background: #333;
+    display: block;
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Section Styling */
+section#sites, section#selectedRooms {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Details Styling */
+details {
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+details[open] summary {
+    background: #0C6F10;
+}
+
+details summary {
+    background: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+    outline: none;
+    list-style: none;
+    user-select: none;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details ul, #selectedRooms ul {
+    list-style: none;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+details ul li, #selectedRooms ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    transition: background 0.3s ease-in-out;
+}
+
+details ul li:last-child, #selectedRooms ul li:last-child {
+    border-bottom: none;
+}
+
+/* Hover Effect */
+details ul li:hover, #selectedRooms ul li:hover {
+    background: #e0f7fa;
+}
+
+/* Button Styling */
+button#clearBtn {
+    display: block;
+    width: calc(100% - 1em);
+    padding: 10px;
+    background: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 0.5em 0.5em;
+    transition: background 0.3s ease-in-out;
+}
+
+button#clearBtn:hover {
+    background: #d32f2f;
+}
